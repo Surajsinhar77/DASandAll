@@ -9,12 +9,12 @@ bool mychecksequenece(char large[], char *small, int i){
     }
 
     // int size = sizeof_large(large);
-    for (int i; large[i] != '\0'; i++){
+    for (i; large[i] != '\0'; i++){
 
         if (large[i] == small[0]){
             // char *smallans = small;
             small++;
-            bool ans = mychecksequenece(large, small,i);
+            bool ans = mychecksequenece(large, small,i+1);
             return ans;
         }
     }
