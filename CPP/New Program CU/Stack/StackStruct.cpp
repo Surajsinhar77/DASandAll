@@ -4,7 +4,7 @@ using namespace std;
 int push(int a[],int num,int top,int n){
     if(top==n){
         cout<<"Our Stack is full"<<endl;
-    }
+    }98 
     else{
         top++;
         a[top] = num; 

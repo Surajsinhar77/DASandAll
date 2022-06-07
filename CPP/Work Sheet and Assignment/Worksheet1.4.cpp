@@ -50,7 +50,6 @@ void bubbleSort(int A[],int n){
             }
         }
     }
-
 }
 
 void display(int A[],int n){
@@ -59,7 +58,7 @@ void display(int A[],int n){
     for(int i=0;i<n;i++){
         cout<<A[i]<<"\n";
     }
-    cout<<"Name- Suraj Kumar\nUID - 21BCS8187"<<endl;
+    // cout<<"Name- Suraj Kumar\nUID - 21BCS8187"<<endl;
 }
 
 int main(){

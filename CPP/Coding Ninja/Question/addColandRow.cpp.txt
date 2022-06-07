@@ -1,0 +1,71 @@
+#include<iostream>
+#include<climits>
+using namespace std;
+
+    void findLargest(int **input,int nR,int mC){
+        
+        // cout << "Printing the array" << endl;
+        // for(int i = 0; i < nR; i++){
+        //     for(int j = 0; j < mC; j++){
+        //         cout << input [i] [j]<<" ";
+        //     }    
+        //     cout<<endl;
+        // }
+
+        int RowAdd = 0,rowName = INT_MIN;
+        // cout << "ADDING..." << endl;
+        for(int i = 0; i < nR; i++){
+            int rowaddGet = 0;
+            for(int j = 0; j < mC; j++){
+                rowaddGet = rowaddGet + input[i][j];
+            }    
+            if(RowAdd<rowaddGet){
+                RowAdd = rowaddGet;
+                rowName = i;
+            }
+        }
+
+        // cout << "Sumof Row is : " << RowAdd <<" and row is : "<< rowName << endl;
+
+        int ColAdd = 0,ColName = INT_MIN;
+
+        // cout << "ADDING..." << endl;
+        for(int i = 0; i < mC; i++){
+            int coladdGet = 0;
+            for(int j = 0; j < nR; j++){
+                // cout<<input[j][i]<<endl<< " ["<<j<<"] ["<<i<<"]"<<endl;
+                coladdGet = coladdGet+input[j][i];
+            }
+            if(ColAdd<coladdGet){
+                ColAdd = coladdGet;
+                ColName = i;
+            }
+            
+        }
+
+        // cout << "Sumof Col is : " << ColAdd <<" and Col is : "<< ColName << endl;
+        if( RowAdd > ColAdd){
+            cout<<"row "<<rowName<<" "<<RowAdd;
+        }else{
+            cout<<"col "<<ColName<<" "<<ColAdd;
+        }
+    }
+
+int main()
+{
+    int nRows = 0,mCols = 0;
+    cout<<"Enter the size m and n : ";
+    cin >> nRows >> mCols;
+    int **input = new int*[nRows];
+    
+
+    cout << "Enter the element of matrix" << endl;
+    for(int i = 0; i < nRows; i++){
+        input[i] = new int[mCols];
+        for(int j = 0; j < mCols; j++){
+            cin >> input [i] [j];
+        }    
+    }
+    findLargest(input, nRows, mCols);
+    return 0;
+}
