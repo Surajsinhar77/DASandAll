@@ -1,0 +1,8 @@
+    NOTE for CPP
+
+
+1.      Modulas oprator is not work with double and float value 
+
+2.      int * int = int , int * double = double 
+        
+        example = 120*20/100     = int*int/int = int  
