@@ -14,13 +14,13 @@ int main(){
 
     // Dynamic Object Creation 
 
-    Student *s2 =  new Student;  // both allow
-    Student *s3 =  new Student();
+    Student *s2 =  new Student;   // 1) both allow
+    Student *s3 =  new Student(); // 2)
 
-    s2->setter(72, 23);   // allow 
+    s2->setter(72, 23);   // 1) allow 
     s2->display();
 
-    (*s3).setter(88,61);  // allow
+    (*s3).setter(88,61);  // 2) allow
     (*s3).display();
 
     return 0;
