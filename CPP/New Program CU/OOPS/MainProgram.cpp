@@ -8,7 +8,6 @@ int main(){
     Student s1;
 
     s1.age = 77;
-    // s1.display();
 
     cout<< s1.getter() << endl;
 
