@@ -12,7 +12,7 @@ int main(){
     s1.setter(88,26);
     s1.display();
 
-    // Dynamic Object Creation 
+    // Dynamic Object Creation  
 
     Student *s2 =  new Student;   // 1) both allow
     Student *s3 =  new Student(); // 2)
