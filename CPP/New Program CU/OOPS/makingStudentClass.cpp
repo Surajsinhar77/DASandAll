@@ -3,10 +3,18 @@ class Student{
     public:
     int age;
 
-    private:
+    // private:
     int rollno;
 
+
     public:
+
+    // Parameterize Constructor
+    Student(int a,int rol){
+        age = a;
+        rollno = rol;
+    }
+
     int getter(){
         return age;
     }
@@ -17,7 +25,6 @@ class Student{
     }
 
     void display(){
-        cout << age << endl;
-        cout << rollno << endl;
+        cout << age <<" "<< rollno <<endl;
     }
 };
