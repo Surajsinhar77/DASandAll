@@ -10,8 +10,6 @@ int main(){
     
     Studentcl s1(20,nam);
 
-    
-
     nam[3] = '5'; 
     Studentcl s2(21,nam);
 
@@ -21,6 +19,5 @@ int main(){
     Studentcl s3(s1);
 
     s3.display();
-
     return 0;
 }

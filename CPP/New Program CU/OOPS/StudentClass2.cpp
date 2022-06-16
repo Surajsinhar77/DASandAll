@@ -24,7 +24,7 @@ class Studentcl{
     //     this->rollno = age;
     // }
 
-    // Manual Copy constructor
+    // Manual Copy constructor  with Deep copy 
 
     Studentcl(const Studentcl &s){
         this->rollno = s.rollno; 
