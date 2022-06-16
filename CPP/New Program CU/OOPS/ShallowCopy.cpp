@@ -20,7 +20,6 @@ int main(){
 
     Studentcl s3(s1);
 
-
     s3.display();
 
     return 0;
