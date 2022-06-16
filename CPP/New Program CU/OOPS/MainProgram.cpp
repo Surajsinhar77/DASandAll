@@ -15,7 +15,7 @@ int main(){
     // Dynamic Object Creation  
 
     Student *s2 =  new Student;   // 1) both allow
-    Student *s3 =  new Student(); // 2)
+    Student *s3 =  new Student(/*Value, value2 */);     // 2)
 
     s2->setter(72, 23);   // 1) allow 
     s2->display();

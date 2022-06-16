@@ -14,13 +14,13 @@ int main(){
     // cout<<"ob2 : ";
     // ob2.display();
 
-    // Student ob3 = ob2;
+    // Student ob3 = ob2;  // copy Constructor call Ho jayega
     
     // cout<<"ob3 : ";
     // ob3.display();
 
     // // Dynamically Copy Constructor 
-    // Student *ob5 = new Student;
+    // Student *ob5 = new Student(45,67);
 
     // ob5->setter(45,67);
 
@@ -38,6 +38,6 @@ int main(){
     
     ob8 = ob1; 
     ob8.display();
-    
+
     return  0;
 }
