@@ -52,7 +52,6 @@ node *takeInput2(){
             }
             temp->next = newnode;
         }
-
         cin>>data;
     }
     return head;
