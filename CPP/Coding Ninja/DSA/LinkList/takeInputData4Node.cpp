@@ -2,14 +2,39 @@
 #include "NodeClass.cpp"
 using namespace std;
 
-void printingDynamicNodes(node * copyOfHead){
+void printIthNode(Node *head, int i) // printing i th element in the node
+{
+    //Write your code here
+    int count=-1;
+    
+    while(head!=NULL){
+        count++;
+        if(count == i){
+            cout<<head->data;
+            break;
+        }
+        head = head->next;
+    }
+}
+
+int length(node * head){   // Printing the Length of the Linklist
+    int count = 0;
+
+    while(head != NULL){
+        count++;
+        head = head->next;
+    }
+    return count;
+}
+
+void printingDynamicNodes(node * copyOfHead){  // Printing the Element og the linklist
     while(copyOfHead != NULL){
         cout<<copyOfHead->data<<" ";
         copyOfHead = copyOfHead->next;
     }
 }
 
-node *takeInput(){
+node *takeInput(){                // taking inputs and making LL  O(n) complexity
 
     int data;
     cin>> data;
@@ -35,7 +60,7 @@ node *takeInput(){
     return head;
 }
 
-node *takeInput2(){
+node *takeInput2(){       // taking inputs and making LL O(n) complexity
     int data;
     cin>> data;
     node * head=NULL;
@@ -62,8 +87,6 @@ int main(){
     node * head = takeInput();
     // node* head = takeInput2();
     printingDynamicNodes(head);
-
-
 
     return 0;
 }
