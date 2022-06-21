@@ -2,7 +2,7 @@
 #include "NodeClass.cpp"
 using namespace std;
 
-node* insertingNewNodeAtiTH(node * head, int i, int data){
+node* insertingNewNodeAtiTH(node * head, int i, int data){  // inserting the element at ith position
 
     node *newnode = new node(data);
     node * temp = head;
@@ -106,7 +106,7 @@ node *takeInput2(){       // taking inputs and making LL O(n) complexity
     return head;
 } 
 
-node*delectionOfnodeAtiTh(node*head, int i){
+node*delectionOfnodeAtiTh(node*head, int i){ // deleting the element at ith position
     int count=0;
     node * temp = head;
     if(i==0){
