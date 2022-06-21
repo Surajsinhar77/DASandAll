@@ -26,20 +26,20 @@ node* insertingNewNodeAtiTH(node * head, int i, int data){
     return head;
 }
 
-// void printIthNode(Node *head, int i) // printing i th element in the node
-// {
-//     //Write your code here
-//     int count=-1;
+void printIthNode(node *head, int i) // printing i th element in the node
+{
+    //Write your code here
+    int count=-1;
     
-//     while(head!=NULL){
-//         count++;
-//         if(count == i){
-//             cout<<head->data;
-//             break;
-//         }
-//         head = head->next;
-//     }
-// }
+    while(head!=NULL){
+        count++;
+        if(count == i){
+            cout<<head->data;
+            break;
+        }
+        head = head->next;
+    }
+}
 
 int length(node * head){   // Printing the Length of the Linklist
     int count = 0;
