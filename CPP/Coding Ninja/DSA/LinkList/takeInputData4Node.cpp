@@ -84,7 +84,7 @@ node *takeInput(){                // taking inputs and making LL  O(n) complexit
     return head;
 }
 
-node *takeInput2(){       // taking inputs and making LL O(n) complexity
+node *takeInput2(){       // taking inputs and making LL O(n2) complexity
     int data;
     cin>> data;
     node * head=NULL;

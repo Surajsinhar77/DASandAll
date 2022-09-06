@@ -22,7 +22,6 @@ node*delectionOfnodeAtiTh(node*head, int i){
     return head;
 }
 
-
 int main(){
     
     return 0;
