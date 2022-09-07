@@ -40,3 +40,10 @@ Node * LinkListCreation(){
             head=head->next;
         }
     }
+
+    int LengthOfLL(Node*head){
+        if(head==NULL){
+            return 0;
+        }
+        return LengthOfLL(head->next)+1;
+    }

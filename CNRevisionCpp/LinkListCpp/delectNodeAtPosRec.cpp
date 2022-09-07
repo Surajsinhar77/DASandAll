@@ -5,30 +5,31 @@ using namespace std;
 // easy way to delect the node by recusrion 
 
 Node *deleteNodeRec(Node *head, int k){
-    // If invalid k
-    //     if (k < 0)
-    //        return head;
-
-    // If linked list is empty
-    if (head == NULL)
+    if(head == NULL){
         return NULL;
-
-    // Base case (start needs to be deleted)
-    if (k == 0)
-    {
-        Node *res = head->next; // saving the address of the  next node in res  and returning the res and the res saves in the pervious node next mai
-        delete (head);
-        return res;
     }
 
-    head->next = deleteNodeRec(head->next, k - 1);
+    if(k==0){
+        Node*temp = head->next;
+        delete(head);
+        return temp;
+    }
+
+    head->next = deleteNodeRec(head->next, k-1);
     return head;
+}
+
+Node * deleteNodeRec(Node * head, int k, int data){
+    if(head==NULL){
+        return NULL;
+    }
+
+    
 }
 
 int main(){
     Node *head;
     head = LinkListCreation();
-
     cout<<"Enter the position to insert "<<endl;
     int i;
     cin>>i;
