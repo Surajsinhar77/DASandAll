@@ -28,7 +28,6 @@ void merge(int input[],int lb,int mid, int ub){
             k++;
             j++;
         }
-        
     }
     if(i<=mid){
         while(i<=mid){
