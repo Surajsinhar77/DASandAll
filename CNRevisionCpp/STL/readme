@@ -1,0 +1,5 @@
+STL stand for the Stand for Standard Template Library 
+
+    1. stl is undifine type of inbuilt classes which is use to make our programming fast and easy 
+    2. to use stl you must include template name and template typename (template name should be the same name which you have written that file name) in the file.
+    3. There is inbuil template for Stack , Queues and vector. 
