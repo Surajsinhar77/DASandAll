@@ -16,8 +16,3 @@ treeNode <int> * takeInput(){
     }
     return root;
 }
-
-int main(){
-    
-    return 0;
-}
