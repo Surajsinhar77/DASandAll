@@ -11,8 +11,9 @@ class treeNode{
     treeNode(int data){
         this->data = data;
     }
+};
 
-    treeNode <int> * takeInputLevelWise(){
+treeNode <int> * takeInputLevelWise(){
         int rootdata;
         cout<< "Enter root data :";
         cin>>rootdata;
@@ -40,10 +41,10 @@ class treeNode{
         return root;
     }
     
-    void printLevelWise(TreeNode<int>* root) {
+    void printLevelWise(treeNode<int>* root) {
         // Write your code here
-        queue<TreeNode<int>*> pendingNodes;
-        TreeNode<int>* front = root;
+        queue<treeNode<int>*> pendingNodes;
+        treeNode<int>* front = root;
         pendingNodes.push(root);
         
         while(pendingNodes.size()!=0){
@@ -61,7 +62,7 @@ class treeNode{
         }
     }
 
-    void printTree(treeNode <int> root){
+    void printTree(treeNode <int> * root){
         if(root == NULL){
             return;
         }
@@ -75,4 +76,3 @@ class treeNode{
             printTree(root->children[i]);
         }
     }
-};
