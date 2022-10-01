@@ -11,6 +11,12 @@ class treeNode{
     treeNode(int data){
         this->data = data;
     }
+
+    ~treeNode(){
+        for(int i = 0; i<children.size(); i++){
+            delete children[i];
+        }
+    }
 };
 
 treeNode <int> * takeInputLevelWise(){
@@ -75,4 +81,12 @@ treeNode <int> * takeInputLevelWise(){
         for(int i = 0; i< root->children.size(); i++){
             printTree(root->children[i]);
         }
+    }
+
+    void deleteionNodes(treeNode<int> * root){
+        for(int i =0; i<root->children.size(); i++){
+            deleteionNodes(root->children[i]);
+        }
+        delete root;
+        return;
     }
