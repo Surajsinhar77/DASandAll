@@ -7,7 +7,7 @@ using namespace std;
 
 int maxSumOfNodeData(treeNode<int> * root, int level ){
     int data = 0;
-
+    
     for(int i =0; i <root->children.size(); i++){
         if(level==1){
             int ans  = maxSumOfNodeData(root->children[i],level-1);
@@ -27,7 +27,7 @@ int maxSumOfNodeData(treeNode<int> * root, int level ){
 }
 
 treeNode<int> * getMaxNode(treeNode<int> root, int maxData){
-    
+
 }
 
 treeNode<int> * maxSumOfNode(treeNode<int> * root){
