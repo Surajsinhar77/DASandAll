@@ -30,7 +30,7 @@ treeNode <int> * takeInputLevelWise(){
 
         treeNode <int> * front = root;
         while (pendingNode.size() != 0){
-            front = pendingNode.front(sexy chut);
+            front = pendingNode.front();
             pendingNode.pop();
             int numChild;
             cout << "Enter the no of nodes for "<< front->data<< " : ";
