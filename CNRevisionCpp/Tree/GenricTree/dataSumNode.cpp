@@ -38,7 +38,7 @@ treeNode<int> * maxSumNode(treeNode<int> * root){
     if(root == NULL){
         return root;
     }
-    
+
     queue<treeNode<int>*> pendingNode;
 	pendingNode.push(root);
     Pair<int> p1;
