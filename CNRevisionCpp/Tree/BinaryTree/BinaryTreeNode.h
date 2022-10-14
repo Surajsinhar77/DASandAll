@@ -69,14 +69,14 @@ binaryTreeNode<int> * levelWiseInput(){
         binaryTreeNode<int> * front = pendingNode.front();
         pendingNode.pop();
         int leftData,rightData;
-        cout<< "Enter The data for : "<<front->data<<" left node :";
+        cout<< "Enter The data for : "<<front->data<<" left node : ";
         cin>>leftData;
         if(leftData!=-1){
             binaryTreeNode<int> * leftNode =  new binaryTreeNode<int>(leftData);
             front->left = leftNode;
             pendingNode.push(leftNode);
         }
-        cout<< "Enter The data for : "<<front->data<<" Right node :";
+        cout<< "Enter The data for : "<<front->data<<" Right node : ";
         cin>>rightData;
         if(rightData!=-1){
             binaryTreeNode<int> * rightNode = new binaryTreeNode<int>(rightData);
