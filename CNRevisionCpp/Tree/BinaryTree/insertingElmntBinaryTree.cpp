@@ -6,6 +6,7 @@ using namespace std;
 int main(){
     // binaryTreeNode<int>* root = inputBinaryTree();
     binaryTreeNode<int>* root = levelWiseInput();
-    displayBinaryTree(root);
+    // displayBinaryTree(root);
+    displayBinaryTreeLevelWise(root);
     delete root;
 }
