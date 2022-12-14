@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#include "LinkedListClass.cpp"
+#include "LinkedListClass.h"
 
 Node * appendLastNToFirst(Node * head, int n){
     Node * start = head;

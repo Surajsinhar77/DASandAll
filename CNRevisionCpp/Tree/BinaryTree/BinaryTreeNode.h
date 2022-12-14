@@ -91,7 +91,6 @@ void displayBinaryTreeLevelWise(binaryTreeNode<int> * root){
     if(root == NULL){
         return;
     }
-    
     queue<binaryTreeNode<int>*> pendingNode;
     pendingNode.push(root);
     while(!pendingNode.empty()){
