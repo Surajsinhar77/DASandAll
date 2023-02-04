@@ -18,7 +18,7 @@ int main(){
     binaryTreeNode<int> * root;
     root =  levelWiseInput();
 
-    cout<< NoOfNodeInTree(root);
+    cout<< "The no of node is :  "<<NoOfNodeInTree(root)<<endl;
 
     displayBinaryTree(root);
 }
