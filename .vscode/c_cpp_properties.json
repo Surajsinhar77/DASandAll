@@ -10,10 +10,21 @@
                 "UNICODE",
                 "_UNICODE"
             ],
-            "compilerPath": "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\bin\\gcc.exe",
+            "compilerPath": "/usr/bin/g++-11",
             "cStandard": "c89",
             "cppStandard": "c++14",
             "intelliSenseMode": "windows-gcc-x64"
+        },
+        {
+            "name": "CPP",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64"
         }
     ],
     "version": 4

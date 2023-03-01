@@ -8,5 +8,5 @@
         "forward_list": "cpp",
         "list": "cpp"
     },
-    "C_Cpp.errorSquiggles": "Enabled"
+    "C_Cpp.errorSquiggles": "enabled"
 }
