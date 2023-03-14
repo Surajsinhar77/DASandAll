@@ -8,39 +8,33 @@
 
 using namespace std;
 
-int sumPair(int arr[], int n){
-	unordered_map<int, int> map1;
-	
-	queue<int> q1;
-	
-	for(int i=0; i<n; i++){
-		map1[arr[i]]++;
-	}
-	
-	for(int i=0; i<n; i++){
-		q1.push(arr[i]);
-	}
-	
-	int count=0;
-	
-	while(!q1.empty()){
-		if(q1.front() > 0){
-			if( map1.count(-(q1.front() )) > 0){
-				count++;
-				map1[q1.front()]--;
-				q1.pop();
-			}
-		}else{
-			if(map1.count(+(q1.front())) > 0 ){
-				count++;
-				map1[q1.front()]--;
-				q1.pop();
-			}
-		}
-		
-		q1.pop();
-	}
-	return count;
+int pairSum(int *arr, int n) {
+  
+  unordered_map<int, int> map1;
+
+  queue<int> q1;
+
+  for (int i = 0; i < n; i++) {
+    map1[arr[i]]++;
+  }
+
+  
+  int count = 0;
+
+  for (int i = 0; i < n; i++) {
+    if (arr[i] > 0) {
+      if (map1.count(-(arr[i])) > 0) {
+        count = count + map1[arr[i]] * map1[-(arr[i])];
+        map1.erase(arr[i]); // we can use this erase function also
+        map1.erase(-(arr[i]));
+      }
+
+    }else if (arr[i] == 0) {
+      count = count + map1[arr[i]] - 1;
+      map1[arr[i]]--;
+    }
+  }
+  return count;
 }
 
 int main(){
@@ -52,6 +46,6 @@ int main(){
 	for(int i =0; i<n; i++){
 		cin>>arr[i];
 	}
-	cout<<sumPair(arr, n);
+	cout<<pairSum(arr, n);
 	return 0;
 }

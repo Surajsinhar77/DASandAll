@@ -28,7 +28,7 @@ bool checkBalanceTree(binaryTreeNode<int> * root){
 int main(){
 	binaryTreeNode<int> * root;
 	root = levelWiseInput();
-
+	cout<<"The Height of the Tree is : "<<heightOftheTree(root)<<endl;
 	cout<<(checkBalanceTree(root)? "True" : "False");
 	displayBinaryTreeLevelWise(root);
 }

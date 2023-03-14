@@ -21,6 +21,14 @@ int main(){
 
     cout<<map1["naam"]<<" "<<map1["kaam"]<<" "<<map1["ram"]<<" "<<endl; // this is how we can print the value of the value
     
+    map1.erase("naam"); // this way we can delete any key value pair in the Map
+    
+    cout<<map1["naam"]<<" "<<map1["kaam"]<<" "<<map1.at("ram")<<" "<<endl; // this is how we can print the value of the value
+    
+    
+    //unordered_map <string, int> ::iteratore it;
+    
+    
 
     return 0;
 }
